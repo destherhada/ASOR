@@ -1,3 +1,4 @@
+//Practica 2.1 -- Ejercicio 5 -- Esther Babon y Claudia Lopez-Mingo
 #include <sys/utsname.h>
 #include <stdio.h>
 #include <unistd.h>
