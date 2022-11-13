@@ -1,0 +1,25 @@
+ Podemos formar diferentes formatos usando las siguientes strings en el argumento de formato de date(1):    (En este archivo solo enseñamos las referentes a la hora)
+
+       %c     Fecha y hora locales en formato [Día de la semana abreviado] [Mes abreviado] [Día del mes en número] [h]:[min]:[sec] [Año
+       %H     Hora entre 0 y 23, con 0 delante de los números de un dígito
+       %I     Hora entre 1 y 12, con 0 delante de los números de un dígito
+       %k     Igual que H pero los números de un dígito no llevan 0 delante
+       %l     Igual que I pero los números de un dígito no llevan 0 delante
+       %M     Minuto entre 0 y 59, con 0 delante de los números de un dígito
+       %n     Nueva línea
+       %N     Nanosegundos entre 0 y 999999999, con ceros delante de los números con menos de 9 dígitos.
+       %p     AM o PM en el idioma local
+       %P     AM o PM en el idioma local y en minúscula
+       %r     Hora local en formato [h]:[min]:[sec] [AM/PM] (hasta las 12 horas)
+       %R     Hora local en formato [h]:[min] hasta las 24 horas
+       %s     Segundos desde el Epoch
+       %S     Segundos entre 0 y 60 y con 0 delante de los números de un dígito.
+       %t     Espacio
+       %T     Hora en formato [h]:[min]:[sec] hasta las 24 horas
+       %z     Zona horaria numérica en formato +hhmm
+       %:z    Zona horaria numérica en formato +hh:mm
+       %::z   Zona horaria numérica en formato +hh:mm:ss
+       %:::z  Zona horaria numérica con más precisión
+       %Z     Zona horaria en abreviación alfabética
+
+      También podemos añadir otros símbolos para cambiar el formato (espacios, mayúscula, etc)
