@@ -22,8 +22,8 @@ int main(){
     printf("La politica de planificacion del proceso actual es: %s\n", sched_policies[politica]);
     sched_getparam(0, &p);
     printf("La prioridad de planificacion del proceso es: %i\n", p.sched_priority);
-    int prioridad = getpriority(PRIO_PROCESS, 0);
-    printf("La prioridad de planificacion del proceso es: %i\n", prioridad);   
+    //int prioridad = getpriority(PRIO_PROCESS, 0);
+    //printf("La prioridad de planificacion del proceso es: %i\n", prioridad);   
     int maximo = sched_get_priority_max(politica);
     int minimo = sched_get_priority_min(politica);
     printf("El valor maximo de la prioridad puede ser: %i\n", maximo);
