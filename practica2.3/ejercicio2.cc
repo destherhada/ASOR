@@ -4,7 +4,12 @@
 #include <sys/resource.h>
 #include <stdio.h>
 
+//Para que funcione en el ejercicio 3, pasamos el pid del proceso por parametro
+//int main(int argc, char **argv){
+
 int main(){
+    
+    //int pid = atoi(argv[1]);
 
     const char *sched_policies[] = {
     "SCHED_NORMAL",
@@ -17,7 +22,7 @@ int main(){
 
     struct sched_param p;
 
-
+    //donde se pasa 0 habria que pasar pid
     int politica = sched_getscheduler(0);
     printf("La politica de planificacion del proceso actual es: %s\n", sched_policies[politica]);
     sched_getparam(0, &p);
