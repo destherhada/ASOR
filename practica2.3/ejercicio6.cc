@@ -1,3 +1,4 @@
+//ASOR -- PRACTICA 2.3 -- EJERCICIO 6 -- ESTHER BABON ARCAUZ Y CLAUDIA LOPEZ-MINGO MORENO
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,7 +6,9 @@
 #include <sys/time.h>
 #include <sys/resource.h>
 
-
+/*
+Cuando el proceso padre termina antes que el hijo (Sin sleep(100)), el pid del padre se  pone a 1, cuando el proceso hijo termina antes el pid del padre se 
+mantiene en el valor original.*/
 int main(){
 
     pid_t pid;
