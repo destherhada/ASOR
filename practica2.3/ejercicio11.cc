@@ -4,8 +4,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-//export SLEEP_SECS="120"
-
 int main(int argc, char **argv) {
 
   sigset_t set;
