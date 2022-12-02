@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 
+//funciona de la misma manera para las opciones: ./ej7 ps -el y ./ej7 “ps -el”
+
 int main(int argc, char **argv){
 
     int length = 1;
