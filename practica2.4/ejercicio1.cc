@@ -1,5 +1,6 @@
+#include <stdio.h>
 #include <unistd.h>
-
+#include <errno.h>
 
 int main(int argc, char **argv){
     /*argv -- 1 = comando1
@@ -7,23 +8,22 @@ int main(int argc, char **argv){
               3 = comando2
               4 = argumento2*/
 
-    int tub = pipe(int fd[2]); //crear tuberia
+    int fd[2];
+    int tub = pipe(fd); //crear tuberia
 
     switch (fork()) {
-    case 0:
-      dup(fd[0],0);
-      close(fd[1]);
-      close(fd[0]);
-      printf("Ejecuto el hijo (comando2 argumento2)");
-      execlp(argc[3],argc[3],argc[4]);
-    break;
-    default:
-      dup(fd[1],1);
-      close(fd[1]);
-      close(fd[0]);
-      printf("Ejecuto el padre (comando1 argumento1)");
-      execlp(argc[1],argc[1],argc[2]);
-    break;
+        case 0:
+            close(fd[1]);
+            dup2(fd[0],0);
+            close(fd[0]);
+            execlp(argv[3],argv[3],argv[4], NULL);
+            break;
+        default:
+            close(fd[0]);
+            dup2(fd[1],1);
+            close(fd[1]);
+            execlp(argv[1],argv[1],argv[2], NULL);
+            break;
   }
     return 1;
 }
