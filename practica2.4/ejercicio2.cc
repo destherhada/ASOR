@@ -50,7 +50,9 @@ int main(){
                 ssize_t psize = read(0, msg, 1024);
                 msg[psize] = '\0';
                 psize = write(p_h[1], msg, psize + 1);
-            
+                while (cmsg[0] != 'l' && cmsg[0] != 'q') {
+					psize = read(h_p[0], cmsg, 1);
+				}
             }
             close(p_h[1]);
 			close(h_p[0]);
@@ -60,5 +62,5 @@ int main(){
 
     }
 
-  return 1;
+  return 0;
 }
