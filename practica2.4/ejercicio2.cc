@@ -21,7 +21,7 @@ int main(){
             char rmsg[1025];
             
 
-            for(int i = 0; i < 11; i++){
+            for(int i = 0; i < 10; i++){
                 ssize_t size = read(p_h[0], rmsg, 1024);
                 rmsg[size] = '\0';
                 printf("[Hijo] Mensaje : %s", rmsg);
