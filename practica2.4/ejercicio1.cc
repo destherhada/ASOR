@@ -1,3 +1,4 @@
+//Practica 2.4 -- Ejercicio 1 -- Esther Babon Arcauz y Claudia Lopez-Mingo Moreno
 #include <stdio.h>
 #include <unistd.h>
 #include <errno.h>
