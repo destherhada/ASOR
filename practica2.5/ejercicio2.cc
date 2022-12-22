@@ -1,4 +1,4 @@
-//Practica 2.5 -- Ejercicio 1 -- Esther Babon Arcauz y Claudia Lopez-Mingo Moreno
+//Practica 2.5 -- Ejercicio 2 -- Esther Babon Arcauz y Claudia Lopez-Mingo Moreno
 
 #include <stdio.h>
 #include <stdlib.h>
