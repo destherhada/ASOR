@@ -1,3 +1,4 @@
+//Practica 2.5 -- ejercicio 6 -- Esther Babon Arcauz y Claudia Lopez-Mingo Moreno
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
